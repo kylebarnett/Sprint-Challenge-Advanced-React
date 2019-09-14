@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         <Navbar />
-        <p style={{ textAlign: 'center', marginTop: '10px' }}>The data you will see is the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide.</p>
+        <h3 style={{ textAlign: 'center', marginTop: '25px' }}>The data you will see is the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide.</h3>
         <PlayerList
           players={this.state.players}
         />
