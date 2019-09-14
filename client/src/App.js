@@ -14,11 +14,13 @@ class App extends React.Component {
       .then(res => res.json())
       .then(res => this.setState({ players: res }))
   }
-  
+
   render() {
     console.log(this.state.players)
     return (
       <div className="App" >
+        <h1 style={{ textAlign: 'center' }}>Welcome to the World Cup Database!</h1>
+        <p style={{ textAlign: 'center' }}>The data you will see is the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide.</p>
         <PlayerList
           players={this.state.players}
         />

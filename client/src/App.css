@@ -1,18 +1,20 @@
 .App {
-  margin: 0 auto;
-  width: 750px;
+  margin: 0 auto; 
+  background-color: #48CFAD;
 }
 
 .player-list-container {
+  max-width: 1080px;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding: 10px;
-  justify-content: space-around
+  justify-content: center;
 }
 
-/* .player-card {
-  display: flex;
-  flex-direction: column;
+.player-card {
   text-align: center;
-  border: 1px solid black
-} */
+  flex-wrap: wrap;
+  padding: 10px;
+  /* border: 1px solid black */
+}
