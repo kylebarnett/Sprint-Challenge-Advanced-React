@@ -1,6 +1,7 @@
 import React from 'react';
 import PlayerList from './components/PlayerList';
-import './App.css';
+import './styles.scss';
+import Navbar from './components/NavBar';
 
 class App extends React.Component {
   constructor() {
@@ -19,6 +20,7 @@ class App extends React.Component {
     console.log(this.state.players)
     return (
       <div className="App" >
+        <Navbar />
         <h1 style={{ textAlign: 'center' }}>Welcome to the World Cup Database!</h1>
         <p style={{ textAlign: 'center' }}>The data you will see is the Women's World Cup players ranked by search interest from Google Trends, June-July 2019, worldwide.</p>
         <PlayerList
