@@ -7,7 +7,7 @@ export default function Player(props) {
     <div className="player-card">
       <Card>
         <Card.Content>
-          <Card.Header>
+          <Card.Header color="blue">
             {props.player.name}
           </Card.Header>
           <Card.Meta>
